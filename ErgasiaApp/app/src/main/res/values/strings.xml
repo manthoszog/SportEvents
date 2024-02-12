@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Αθλητικοί Αγώνες</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Εφαρμογή Αθλητικών Αγώνων</string>
+    <string name="nav_header_subtitle">Μάνθος Ζωγράφος - Αντώνης Μερτζανίδης <br />  <br /> - Γιώργος Κλουντζός</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="arxiki">Αρχική</string>
+    <string name="eisagogi">Εισαγωγή Αθλήματος</string>
+    <string name="eisagogi2">Εισαγωγή Αγώνα</string>
+    <string name="tropopoiisi">Τροποποίηση Αθλήματος</string>
+    <string name="tropopoiisi2">Τροποποίηση Αγώνα</string>
+    <string name="diagrafi">Διαγραφή Αθλήματος</string>
+    <string name="diagrafi2">Διαγραφή Αγώνα</string>
+    <string name="erotimata">Ερωτήματα</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="information">Η εφαρμογή αυτή δημιουργήθηκε στο πλαίσιο της εργασίας του μαθήματος "Προηγμένα Θέματα Αλληλεπίδρασης", του τμήματος
+    Μηχανικών Πληροφορικής και Ηλεκτρονικών Συστημάτων του ΔΙ.ΠΑ.Ε.</string>
+    <string name="information2">Η εφαρμογή αφορά την πρόσβαση και επεξεργασία πληροφοριών που σχετίζονται με αθλητικούς αγώνες και υλοποιήθηκε από τους φοιτητές
+        Μάνθο Ζωγράφο, Γιώργο Κλουντζό και Αντώνη Μερτζανίδη.</string>
+    <string name="infoTitle">Πληροφορίες Εφαρμογής</string>
+    <string name="version">VERSION 1.0.0</string>
+    <string name="arxikiText">Καλωσήρθατε στην Εφαρμογή Αθλητικών Αγώνων</string>
+    <string name="arxikiText2">Για πλοήγηση σύρετε το μενού</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="spinnerList">
+        <item name="option0">Επιλέξτε Ερώτημα</item>
+        <item name="option1">Αθλήματα και Ομάδες/Αθλητές</item>
+        <item name="option2">Αθλήτριες με ηλικία >25 ετών</item>
+        <item name="option3">Ελληνικές Ομάδες με έτος ίδρυσης πριν το 1930</item>
+        <item name="option4">Στοιχεία Αγώνων</item>
+        <item name="option5">Αθλητές σε αγώνες στην Ισπανία</item>
+        <item name="option6">Ποδοσφαιρικοί Αγώνες στην Αθήνα</item>
+    </string-array>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Γενικά">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/arxiki"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="@string/arxiki" />
+                <item
+                    android:id="@+id/erotimata"
+                    android:icon="@drawable/ic_baseline_question_answer_24"
+                    android:title="@string/erotimata" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Αθλήματα">
+        <menu>
+            <group android:id="@+id/group1" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/eisagogi"
+                    android:icon="@drawable/ic_baseline_person_add_24"
+                    android:title="@string/eisagogi" />
+                <item
+                    android:id="@+id/tropopoiisi"
+                    android:icon="@drawable/baseline_manage_accounts_24"
+                    android:title="@string/tropopoiisi" />
+                <item
+                    android:id="@+id/diagrafi"
+                    android:icon="@drawable/ic_baseline_person_remove_24"
+                    android:title="@string/diagrafi" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Αγώνες">
+        <menu>
+            <group android:id="@+id/group2" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/eisagogi2"
+                    android:icon="@drawable/baseline_library_add_24"
+                    android:title="@string/eisagogi2" />
+                <item
+                    android:id="@+id/tropopoiisi2"
+                    android:icon="@drawable/ic_baseline_edit_24"
+                    android:title="@string/tropopoiisi2" />
+                <item
+                    android:id="@+id/diagrafi2"
+                    android:icon="@drawable/ic_baseline_delete_24"
+                    android:title="@string/diagrafi2" />
+            </group>
+        </menu>
+    </item>
+</menu>

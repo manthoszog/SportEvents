@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/arxiki">
+
+    <fragment
+        android:id="@+id/arxiki"
+        android:name="com.iee_ihu.examino6.advhci.ergasiaapp.ui.arxiki.ArxikiFragment"
+        android:label="@string/arxiki"
+        tools:layout="@layout/arxiki" />
+
+    <fragment
+        android:id="@+id/eisagogi"
+        android:name="com.iee_ihu.examino6.advhci.ergasiaapp.ui.eisagogi.EisagogiFragment"
+        android:label="@string/eisagogi"
+        tools:layout="@layout/eisagogi" />
+    <fragment
+        android:id="@+id/erotimata"
+        android:name="com.iee_ihu.examino6.advhci.ergasiaapp.ui.erotimata.ErotimataFragment"
+        android:label="@string/erotimata"
+        tools:layout="@layout/erotimata_fragment" />
+    <fragment
+        android:id="@+id/tropopoiisi"
+        android:name="com.iee_ihu.examino6.advhci.ergasiaapp.ui.tropopoiisi.TropopoiisiFragment"
+        android:label="@string/tropopoiisi"
+        tools:layout="@layout/tropopoiisi" />
+    <fragment
+        android:id="@+id/diagrafi"
+        android:name="com.iee_ihu.examino6.advhci.ergasiaapp.ui.diagrafi.DiagrafiFragment"
+        android:label="@string/diagrafi"
+        tools:layout="@layout/diagrafi_fragment" />
+    <fragment
+        android:id="@+id/eisagogi2"
+        android:name="com.iee_ihu.examino6.advhci.ergasiaapp.ui.eisagogi.Eisagogi2Fragment"
+        android:label="@string/eisagogi2"
+        tools:layout="@layout/eisagogi2" />
+    <fragment
+        android:id="@+id/tropopoiisi2"
+        android:name="com.iee_ihu.examino6.advhci.ergasiaapp.ui.tropopoiisi.Tropopoiisi2Fragment"
+        android:label="@string/tropopoiisi2"
+        tools:layout="@layout/tropopoiisi2" />
+    <fragment
+        android:id="@+id/diagrafi2"
+        android:name="com.iee_ihu.examino6.advhci.ergasiaapp.ui.diagrafi.Diagrafi2Fragment"
+        android:label="@string/diagrafi2"
+        tools:layout="@layout/diagrafi2_fragment" />
+</navigation>

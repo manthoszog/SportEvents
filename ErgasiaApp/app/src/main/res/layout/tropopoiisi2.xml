@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".ui.eisagogi.Eisagogi2Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/kodikosAgonaTTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kodikosAgonaTR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Κωδικός Αγώνα"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonAnazitisiT2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="anazitisiT2"
+            android:text="Αναζήτηση Κωδικού"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/kodikosAgonaTTR" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imerAgonaTTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonAnazitisiT2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/imerAgonaTR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Ημερομηνία Αγώνα"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/xoraAgonaTTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imerAgonaTTR">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/xoraAgonaTR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Χώρα"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/poliAgonaTTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/xoraAgonaTTR">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/poliAgonaTR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Πόλη"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/onomaAthlimatosTTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/poliAgonaTTR">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/onomaAthlimatosTR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Όνομα Αθλήματος"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/omada1TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/onomaAthlimatosTTR">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/omada1TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Ομάδα 1"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/omada2TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/omada1TTR">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/omada2TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Ομάδα 2"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/scoreTTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/omada2TTR">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/scoreTR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Σκορ Αγώνα"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/onomaAthliti2TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/onomaAthlimatosTTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/epidosiT"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/onomaAthliti2TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Όνομα Αθλητή 1"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/epidosiTTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/onomaAthliti2TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/buttonEisagogi2"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/epidosiTR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Επίδοση 1"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/onomaAthliti22TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/epidosiTTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/epidosiT"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/onomaAthliti22TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Όνομα Αθλητή 2"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/epidosi2TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/onomaAthliti22TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/buttonEisagogi2"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/epidosi2TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Επίδοση 2"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/onomaAthliti23TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/epidosi2TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/epidosiT"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/onomaAthliti23TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Όνομα Αθλητή 3"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/epidosi3TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/onomaAthliti23TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/buttonEisagogi2"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/epidosi3TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Επίδοση 3"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/onomaAthliti24TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/epidosi3TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/epidosiT"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/onomaAthliti24TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Όνομα Αθλητή 4"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/epidosi4TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/onomaAthliti24TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/buttonEisagogi2"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/epidosi4TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Επίδοση 4"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/onomaAthliti25TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/epidosi4TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/epidosiT"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/onomaAthliti25TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Όνομα Αθλητή 5"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/epidosi5TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/onomaAthliti25TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/buttonEisagogi2"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/epidosi5TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Επίδοση 5"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/onomaAthliti26TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/epidosi5TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/epidosiT"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/onomaAthliti26TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Όνομα Αθλητή 6"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/epidosi6TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/onomaAthliti26TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/buttonEisagogi2"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/epidosi6TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Επίδοση 6"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/onomaAthliti27TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/epidosi6TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/epidosiT"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/onomaAthliti27TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Όνομα Αθλητή 7"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/epidosi7TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/onomaAthliti27TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/buttonEisagogi2"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/epidosi7TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Επίδοση 7"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/onomaAthliti28TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/epidosi7TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/epidosiT"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/onomaAthliti28TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Όνομα Αθλητή 8"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/epidosi8TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/onomaAthliti28TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/buttonEisagogi2"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/epidosi8TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Επίδοση 8"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/onomaAthliti29TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/epidosi8TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/epidosiT"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/onomaAthliti29TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Όνομα Αθλητή 9"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/epidosi9TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/onomaAthliti29TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/buttonEisagogi2"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/epidosi9TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Επίδοση 9"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/onomaAthliti210TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/epidosi9TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/epidosiT"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/onomaAthliti210TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Όνομα Αθλητή 10"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/epidosi10TTR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/onomaAthliti210TTR">
+            <!--app:layout_constraintBottom_toTopOf="@id/buttonEisagogi2"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/epidosi10TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Επίδοση 10"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonTropopoiisi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Τροποποίηση"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/epidosi10TTR"
+            android:onClick="tropopoiisi2OnClick"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
